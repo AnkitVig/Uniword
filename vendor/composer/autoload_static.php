@@ -72,14 +72,14 @@ class ComposerStaticInit59ac01b0f3c3efdbec97050801dfa0f5
     );
 
     public static $prefixLengthsPsr4 = array (
-        'a' => 
-        array (
-            'ankitvig\\uniword\\' => 17,
-        ),
         'Z' => 
         array (
             'ZipStream\\' => 10,
             'Zend\\Escaper\\' => 13,
+        ),
+        'U' => 
+        array (
+            'Uniword\\' => 8,
         ),
         'S' => 
         array (
@@ -108,10 +108,6 @@ class ComposerStaticInit59ac01b0f3c3efdbec97050801dfa0f5
     );
 
     public static $prefixDirsPsr4 = array (
-        'ankitvig\\uniword\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'ZipStream\\' => 
         array (
             0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
@@ -119,6 +115,10 @@ class ComposerStaticInit59ac01b0f3c3efdbec97050801dfa0f5
         'Zend\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
+        ),
+        'Uniword\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -172,6 +172,7 @@ class ComposerStaticInit59ac01b0f3c3efdbec97050801dfa0f5
     );
 
     public static $classMap = array (
+        'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
         'PclZip' => __DIR__ . '/..' . '/pclzip/pclzip/pclzip.lib.php',
     );
 

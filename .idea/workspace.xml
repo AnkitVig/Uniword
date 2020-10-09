@@ -1,18 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc03381-b041-4f8c-b97a-fe4a1b01f09e" name="Default Changelist" comment="" />
+    <list default="true" id="5dc03381-b041-4f8c-b97a-fe4a1b01f09e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/Addstudent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/DBConnect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Module/Readword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Module/Upload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/altorouter/altorouter/AltoRouter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/altorouter/altorouter/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/altorouter/altorouter/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/altorouter/altorouter/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/altorouter/altorouter/phpcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Uniword.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Uniword.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploadword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="/Applications/MAMP/bin/php/php7.4.2/lib/php" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/sabre/xml" />
+      <path value="$PROJECT_DIR$/vendor/sabre/uri" />
+      <path value="$PROJECT_DIR$/vendor/pclzip/pclzip" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpword" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/common" />
+      <path value="$PROJECT_DIR$/vendor/altorouter/altorouter" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-escaper" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iTvgBr4TTYSWDFX7CQ18pLANsA" />
@@ -24,6 +107,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -31,13 +115,24 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Database" />
+      <recent name="$PROJECT_DIR$/src/Module" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.Uniword">
+    <configuration name="Uniword" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="upload.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/web/upload.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.Uniword" />
         <item itemvalue="PHP Script.upload.php" />
       </list>
     </recent_temporary>
@@ -50,37 +145,103 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601944504597</updated>
-      <workItem from="1601944505658" duration="8936000" />
+      <workItem from="1601944505658" duration="27308000" />
+      <workItem from="1602106605873" duration="39102000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="388" y="83" key="#PHP" timestamp="1601944572876">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="388" y="83" key="#PHP/0.23.1440.820@0.23.1440.820" timestamp="1601944572876" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1601959114797">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1602250092539">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1602250092539" />
+    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1602105774987">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602105774987" />
+    <state width="1878" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1602005704582" />
     <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1601959114797" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1601959114796">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1602105774985">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="212" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602105774985" />
+    <state width="1878" height="212" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1602005704581" />
     <state width="1398" height="212" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1601959114796" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1601959114793">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1602105774983">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="212" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602105774983" />
+    <state width="1878" height="212" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1602005704580" />
     <state width="1398" height="212" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1601959114793" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1601959114796">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1602105774986">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="212" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602105774986" />
+    <state width="1878" height="212" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1602005704581" />
     <state width="1398" height="212" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1601959114796" />
-    <state x="221" y="72" key="SettingsEditor" timestamp="1601944510144">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state x="719" y="526" key="NewPhpFileDialog" timestamp="1602163758892">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
+    <state x="539" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1602128766328" />
+    <state x="719" y="526" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1602163758892" />
+    <state x="221" y="54" key="SettingsEditor" timestamp="1602104754816">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="54" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602104754816" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.820@0.23.1440.820" timestamp="1601944510144" />
+    <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1602117988298">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="82" width="598" height="735" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1602117988298" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602189304426">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602189304426" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web/index.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
