@@ -6,7 +6,7 @@
 namespace Uniword\Module;
 
     use PhpOffice\PhpSpreadsheet\IOFactory;
-    use PhpOffice\PhpWord\IOFactory as IOFactory2;
+    use PhpOffice\PhpWord\IOFactory as IOFactoryWord;
     use PhpOffice\PhpSpreadsheet\Spreadsheet;
     use PhpOffice\PhpWord;
 
@@ -20,16 +20,28 @@ namespace Uniword\Module;
                 $wordExtension = array('doc', 'docx');
                 $fileArray = explode(".", $_FILES['filename']['name']);
                 $fileExtension = end($fileArray);
+
+
                 if (in_array($fileExtension, $excelExtension)) {
                     $reader = IOFactory::createReader('Xlsx');
                     $reader->setReadDataOnly(true);
                     $spreadsheet = $reader->load($_FILES['filename']['tmp_name']);
                     $writer = IOFactory::createWriter($spreadsheet, 'Html');
                     $message = $writer->save('php://output');
-                    exit;
                     echo $message;
+                    //exit;
+                    $file_name= 'downloaded.xlsx';
+                    header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+                    header('Content-Disposition: attachment;filename=' . $file_name);
+                    header('Cache-Control: max-age=0');
+                    $writer =\PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
+                    $writer->save($file_name);
+                    echo '<a href="downloaded.xlsx" >Download</a><br/>';
+                   // unlink($file_name);
+                    exit;
+
                 } elseif (in_array($fileExtension, $wordExtension)){
-                    $phpWord = IOFactory2::createReader('Word2007')->load($_FILES['filename']['tmp_name']);
+                    $phpWord = IOFactoryWord::createReader('Word2007')->load($_FILES['filename']['tmp_name']);
                     $text = [];
                     foreach ($phpWord->getSections() as $section) {
                         foreach ($section->getElements() as $element) {
@@ -50,15 +62,22 @@ namespace Uniword\Module;
                                     throw new Exception('Something went wrong...');
                             }
                         }
-
                     }
 
-                    echo '<div align="center"> <textarea placeholder="noticeboard" cols="50" rows="15">';
+                    echo '<div align="center"> <textarea readonly placeholder="noticeboard" cols="50" rows="15">';
                     foreach ($text as $key) {
                         echo $key;
-                        exit;
+
                     }
                     echo '</textarea> </div>';
+                    $file_name= 'downloaded.docx';
+                    header('Content-Type: application/txt');
+                    header('Content-Disposition: attachment;filename=' . $file_name);
+                    header('Cache-Control: max-age=0');
+                    $writer =IOFactoryWord::createWriter($phpWord, 'Word2007');
+                    $writer->save($file_name);
+                    echo '<a href="downloaded.docx" >Download</a><br/>';
+                    exit;
                 } else {
                     $message = '<div class="alertMsg">Only .xls or .xlsx file allowed</div>';
                     echo $message;

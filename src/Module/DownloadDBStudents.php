@@ -9,13 +9,10 @@
 namespace Uniword\Module;
 require_once "../vendor/autoload.php";
 
-
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-
-
-class Download
+class DownloadDBStudents
 {
     function downloadFile()
     {
@@ -46,9 +43,6 @@ class Download
         $activeSheet->setCellValue('J1', 'Sex');
         $activeSheet->setCellValue('K1', 'Date Entered');
         $activeSheet->setCellValue('L1', 'Lunch Cost');
-
-
-
 
         if ( count($students) > 0) {
             $i = 2;
@@ -81,10 +75,7 @@ class Download
         header('Content-Transfer-Encoding: Binary');
         header("Content-disposition: attachment; filename=\"".$file_name."\"");
         readfile($file_name);
-
         unlink($file_name);
-
-
         exit;
     }
 }

@@ -19,9 +19,11 @@ require_once __DIR__ . '/../vendor/autoload.php';
         $addStudent->generateQuery();
     }
 
-    if (isset($_GET)) {
-        $download = new \Uniword\Module\Download();
+
+    if (isset($_GET['a_download'])) {
+        $download = new \Uniword\Module\DownloadDBStudents();
         $download->downloadFile();
+        unset($_GET);
     }
 
 

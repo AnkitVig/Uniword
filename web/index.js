@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#load_excel_form').on('submit', function(event){
         event.preventDefault();
         var ln = document.getElementById("filename").value;
-console.log(ln);
+
             $.ajax({
                 url:"router.php",
                 type:"POST",
@@ -24,9 +24,8 @@ console.log(ln);
         var download = $(this).attr('name');
 
         $.ajax({
-            url:"router.php",
+            url:"router.php?a_download=a_download",
             type:"GET",
-            data: JSON.stringify({'idElement':download}),
             contentType:false,
             cache:false,
             processData:false,
@@ -38,11 +37,27 @@ console.log(ln);
 
     });
 
+
     $('#add_student_form').on('submit', function(event){
         event.preventDefault();
         $.ajax({
             url:"router.php",
             type:"POST",
+            data:new FormData(this),
+            contentType:false,
+            cache:false,
+            processData:false,
+            success:function(data)
+            {
+            }
+        })
+
+    });
+    $('#download_excel').on('submit', function(event){
+        event.preventDefault();
+        $.ajax({
+            url:"router.php",
+            type:"GET",
             data:new FormData(this),
             contentType:false,
             cache:false,
