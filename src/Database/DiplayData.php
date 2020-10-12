@@ -1,22 +1,23 @@
 <?php
 
-//Connect to the database
-require_once __DIR__ . '/../vendor/autoload.php';
-//require('../src/Database/DBConnect.php');
+/*
+ * Connect to the database
+ * Get student names
+ * Define the query to send to the database
+ * We use a prepared statement to execute the query
+ * This creates a PDOStatement object
+ * Execute the query
+ * Return an array containing the query results
+ * Allows new SQL statements to execute
+*/
 
+require_once __DIR__ . '/../vendor/autoload.php';
 $db = new namespace\Uniword\Database\DBConnect();
 $connect = $db->connectDB();
-//Get student names
-//Define the query to send to the database
 $query_students = 'SELECT * FROM Student ORDER BY student_id';
-//We use a prepared statement to execute the query
-//This creates a PDOStatement object
 $student_statement = $connect->prepare($query_students);
-# Execute the query
 $student_statement->execute();
-# Return an array containing the query results
 $students = $student_statement->fetchAll();
-# Allows new SQL statements to execute
 $student_statement->closeCursor();
 ?>
 <div class = "Display_Table">

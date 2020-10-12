@@ -4,12 +4,17 @@
 // ==========================================================================
 
 /**
- * Class is used to add Data to the database.
+ * Class is used to add Data to the database
+ * Define the query to send to the database
+ * We use a prepared statement to execute the query
+ * Execute the query
+ * Return an array containing the query results
+ * Allows new SQL statements to execute
  */
 
 
+
 namespace Uniword\Database;
-//use mysql_xdevapi\Exception;
 
 class Addstudent
 {

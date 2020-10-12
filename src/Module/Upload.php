@@ -18,9 +18,9 @@ namespace Uniword\Module;
             if ($_FILES["filename"]["name"] != '') {
                 $excelExtension = array('xls', 'xlsx');
                 $wordExtension = array('doc', 'docx');
-                $file_array = explode(".", $_FILES['filename']['name']);
-                $file_extension = end($file_array);
-                if (in_array($file_extension, $excelExtension)) {
+                $fileArray = explode(".", $_FILES['filename']['name']);
+                $fileExtension = end($fileArray);
+                if (in_array($fileExtension, $excelExtension)) {
                     $reader = IOFactory::createReader('Xlsx');
                     $reader->setReadDataOnly(true);
                     $spreadsheet = $reader->load($_FILES['filename']['tmp_name']);
@@ -28,7 +28,7 @@ namespace Uniword\Module;
                     $message = $writer->save('php://output');
                     exit;
                     echo $message;
-                } elseif (in_array($file_extension, $wordExtension)){
+                } elseif (in_array($fileExtension, $wordExtension)){
                     $phpWord = IOFactory2::createReader('Word2007')->load($_FILES['filename']['tmp_name']);
                     $text = [];
                     foreach ($phpWord->getSections() as $section) {

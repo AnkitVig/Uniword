@@ -1,4 +1,11 @@
 <?php
+// ==========================================================================
+// Project: UniWord
+// ==========================================================================
+
+/**
+ * Class to Download the data entered by the user and stored in the database.
+ */
 namespace Uniword\Module;
 require_once "../vendor/autoload.php";
 
@@ -14,15 +21,12 @@ class Download
     {
         $db = new \Uniword\Database\DBConnect();
         $connect = $db->connectDB();
-        $connect = $db->connectDB();
+        $queryStudents = 'SELECT * FROM Student ORDER BY student_id';
+        $studentStatement = $connect->prepare($queryStudents);
+        $studentStatement->execute();
+        $students = $studentStatement->fetchAll();
 
-
-        $query_students = 'SELECT * FROM Student ORDER BY student_id';
-        $student_statement = $connect->prepare($query_students);
-        $student_statement->execute();
-        $students = $student_statement->fetchAll();
-
-        $student_statement->closeCursor();
+        $studentStatement->closeCursor();
         $spreadsheet = new Spreadsheet();
 
         $Excel_writer = new Xlsx($spreadsheet);
@@ -67,20 +71,15 @@ class Download
 
         $spreadsheet->setActiveSheetIndex(0);
         $file_name= 'students.xlsx';
-// Redirect output to a client's web browser (Xlsx)
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header('Content-Disposition: attachment;filename="simple.xlsx"');
         header('Cache-Control: max-age=0');
 
         $writer =\PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
-    //    $writer->save('php://output');
         $writer->save($file_name);
         header('Content-Type: application/x-www-form-urlencoded');
-
         header('Content-Transfer-Encoding: Binary');
-
         header("Content-disposition: attachment; filename=\"".$file_name."\"");
-
         readfile($file_name);
 
         unlink($file_name);
