@@ -25,11 +25,14 @@ class Addstudent
             $statement = $connect->prepare($query_students);
             $statement->execute();
             $statement->closeCursor();
-            echo "<div class='alert alert-danger'>"."'Item is added succesfully'"."</div>";
+            $message = '<div class="oktMsg">Data is succesfully Entered</div>';
+            echo $message;
+
 
         }
         catch (Exception $exception){
-           echo "<div class='alert alert-danger'>".$exception."</div>";
+            $message = '<div class="alertMsg">Wrong Entry</div>';
+            echo $message;
         }
 
     }

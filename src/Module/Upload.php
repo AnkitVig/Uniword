@@ -60,10 +60,14 @@ namespace Uniword\Module;
                     }
                     echo '</textarea> </div>';
                 } else {
-                    $message = '<div class="alert alert-danger">Only .xls or .xlsx file allowed</div>';
+                    $message = '<div class="alertMsg">Only .xls or .xlsx file allowed</div>';
+                    echo $message;
+                    exit;
                 }
             } else {
-                $message = '<div class="alert alert-danger">Please Select File</div>';
+                $message = '<div class="alertMsg">Please Select File</div>';
+                echo $message;
+                exit;
             }
 
         }

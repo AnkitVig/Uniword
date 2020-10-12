@@ -18,13 +18,12 @@
             <div class='div1 divs'>
                 <h1>Insert Student</h1>
                 <div>
-                    <h3>Insert Student</h3>
-                    <form  method="post" id="add_student_form">
-                        <label>First Name : </label>
+                    <form  class = "aligned_form" method="post" id="add_student_form">
+                        <label for = 'a' >First Name : </label>
                         <input type="text" name="first_name"><br>
-                        <label>Email : </label>
+                        <label for = 'b' >Email : </label>
                         <input type="text" name="email"><br>
-                        <label>Street : </label>
+                        <label for = 'c' l>Street : </label>
                         <input type="text" name="street"><br>
                         <label>City : </label>
                         <input type="text" name="city"><br>
@@ -40,18 +39,15 @@
                         <input type="text" name="sex"><br>
                         <label>Lunch Cost : </label>
                         <input type="text" name="lunch"><br>
-                        <input method = "post" name="Add" type="submit" value="Add Student"><br>
+                        <input method = "post" name="Add" type="submit" value="Add Student"  class="btn-primary" ><br>
                     </form>
 
 
                     <br />
                 </div>
                 </div>
-            <div  class='div2 divs'><h1>Upload files</h1>
+            <div  class='div2 divs'><h1 align="Left">Upload files</h1>
                 <div>
-                    <br />
-                    <h5 align="center">Load Excel and Word Document in Browser using PHPSpreadsheet and Php Word</h5>
-                    <br />
                     <div class="table-responsive">
                         <!-- Excel Form Loading Data -->
                         <span id="message"></span>
@@ -60,7 +56,7 @@
                                 <tr>
                                     <td width="25%" align="right">Select File</td>
                                     <td width="50%"><input type="file" id ="filename" name="filename" /></td>
-                                    <td  width="25%"><input type="submit" name="load" id="btn"   class="btn btn-primary" /></td>
+                                    <td  ><input type="submit" name="load" id="btn"   class="btn-primary" /></td>
                                 </tr>
                             </table>
                         </form>

@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#load_excel_form').on('submit', function(event){
         event.preventDefault();
         var ln = document.getElementById("filename").value;
-
+console.log(ln);
             $.ajax({
                 url:"router.php",
                 type:"POST",

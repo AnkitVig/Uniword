@@ -10,10 +10,12 @@
     min-height: calc(100vh - 40vh);
   }
   .MP,.div1 {
+    display: flex;
     flex: 1;
   }
   .LP,
   .RP{
+    display: flex;
     flex: 0 0 20vw;
     background: #f7f7f7;
   }
@@ -35,17 +37,46 @@
   .divs {
     display: none;
   }
+
   td{
     border-collapse: collapse;
     width: 90%;
   }
 
   table, th, td {
-    border: 1px solid black;
     text-align: left;
   }
+  .btn-primary {
+  width: 90px;
 
-object{
-  height: 400px;
-  width: 100%;
 }
+  .alertMsg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    background: indianred;
+  }
+  .okMsg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: darkseagreen;
+  }
+  object{
+    height: 400px;
+    width: 100%;
+  }
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
