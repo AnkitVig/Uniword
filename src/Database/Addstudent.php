@@ -9,26 +9,31 @@
 
 
 namespace Uniword\Database;
+//use mysql_xdevapi\Exception;
+
 class Addstudent
 {
 
-function generateQuery()
-{
-    $query_students = "INSERT into Student  VALUES  ('" . $_POST["first_name"] . "','" . $_POST["email"] . "','" . $_POST["street"] . "',
-'" . $_POST["city"] . "','" . $_POST["state"] . "', '" . $_POST["zip"] . "', " . $_POST["phone"] . ",  '" . $_POST["birthdate"] . "',
-'" . $_POST["sex"] . "',  now(), " . $_POST["lunch"] . ")";
+    function generateQuery(){
+        try {
+            $query_students = "INSERT into Students.Student (first_name,email,street,city,state,zip,phone,birth_date,sex,date_entered,lunch_cost) VALUES  ('" . $_POST["first_name"] . "','" . $_POST["email"] . "','" . $_POST["street"] . "',
+        '" . $_POST["city"] . "','" . $_POST["state"] . "', '" . $_POST["zip"] . "', " . $_POST["phone"] . ",  '" . $_POST["birthdate"] . "',
+        '" . $_POST["sex"] . "',  now(), " . $_POST["lunch"] . ")";
 
-    $dbg = new namespace\DBConnect();
-    $statement = $dbg.connectDB()->prepare($query_students);
-# Execute the query
-    $statement->execute();
-# Allows new SQL statements to execute
-    $statement->closeCursor();
+            $db = new DBConnect();
+            $connect = $db->connectDB();
+            $statement = $connect->prepare($query_students);
+            $statement->execute();
+            $statement->closeCursor();
+            echo "<div class='alert alert-danger'>"."'Item is added succesfully'"."</div>";
+
+        }
+        catch (Exception $exception){
+           echo "<div class='alert alert-danger'>".$exception."</div>";
+        }
+
+    }
 }
-}
-
-
-
 
 
 ?>

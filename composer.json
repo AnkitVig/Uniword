@@ -7,7 +7,8 @@
         "phpoffice/phpspreadsheet": "^1.14",
         "sabre/xml": "^2.2",
         "altorouter/altorouter": "^2.0",
-      "ext-pdo": "*"
+      "ext-pdo": "*",
+        "symfony/http-foundation": "^5.1"
     },    "autoload" : {
     	"psr-4": {
     		"Uniword\\" : "src/"
