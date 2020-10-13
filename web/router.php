@@ -30,6 +30,4 @@ require_once __DIR__ . '/../vendor/autoload.php';
         $display->displayStudents();
         unset($_GET);
     }
-
-
 ?>

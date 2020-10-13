@@ -27,19 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dc03381-b041-4f8c-b97a-fe4a1b01f09e" name="Default Changelist" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/Uniword.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Uniword.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/design.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/design.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/design.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/design.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/design.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/design.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/DiplayData.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DiplayData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Module/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module/Upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/downloaded.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/downloaded.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/router.php" afterDir="false" />
     </list>
@@ -138,8 +128,16 @@
       <updated>1601944504597</updated>
       <workItem from="1601944505658" duration="27308000" />
       <workItem from="1602106605873" duration="95982000" />
-      <workItem from="1602521770894" duration="17581000" />
+      <workItem from="1602521770894" duration="18243000" />
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1602598959864</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602598959864</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +231,10 @@
     </state>
     <state x="221" y="54" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602104754816" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.820@0.23.1440.820" timestamp="1601944510144" />
+    <state x="597" y="418" key="Vcs.Push.Dialog.v2" timestamp="1602599014297">
+      <screen x="0" y="23" width="1920" height="1120" />
+    </state>
+    <state x="597" y="418" key="Vcs.Push.Dialog.v2/0.23.1920.1120@0.23.1920.1120" timestamp="1602599014297" />
     <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1602117988298">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
