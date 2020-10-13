@@ -25,7 +25,11 @@ require_once __DIR__ . '/../vendor/autoload.php';
         $download->downloadFile();
         unset($_GET);
     }
-
+    if (isset($_GET['displayDetails'])) {
+        $display = new \Uniword\Database\DiplayData();
+        $display->displayStudents();
+        unset($_GET);
+    }
 
 
 ?>

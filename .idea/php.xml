@@ -16,7 +16,6 @@
       <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/phpword" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/common" />
-      <path value="$PROJECT_DIR$/vendor/altorouter/altorouter" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-escaper" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />

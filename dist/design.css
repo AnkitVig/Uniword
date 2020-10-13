@@ -1,8 +1,9 @@
 *{box-sizing:border-box}.flexbox-container{margin:0}.middle{display:flex;min-height:calc(100vh - 40vh)}
 .MP,.div1{display:flex;flex:1}.LP,.RP{display:flex;flex:0 0 20vw;background:#f7f7f7}
 .LP{order:-1}.header,.footer,.MP,.LP,.RP{padding:1em}.header{background:#3b5998;height:10vh}
-.footer{background:#3b5998;height:30vh}.divs{display:none}td{border-collapse:collapse;width:90%}
+.footer{background:#3b5998;height:25vh}.divs{display:none}td{border-collapse:collapse;width:90%}
 table,th,td{text-align:left}.btn-primary{width:90px}.alertMsg{display:flex;justify-content:center;text-align:center;background:indianred}
 .okMsg{display:flex;justify-content:center;text-align:center;background:darkseagreen}
 object{height:400px;width:100%}input[type=text],select,textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;resize:vertical}
-label{padding:12px 12px 12px 0;display:inline-block}
+label{padding:12px 12px 12px 0;display:inline-block}.footer{margin:0}.name{float:left;width:75%;overflow:hidden}
+.profile{float:left;width:25%;overflow:hidden}

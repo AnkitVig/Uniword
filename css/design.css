@@ -30,7 +30,7 @@
 
 .footer {
   background: #3b5998;
-  height: 30vh; }
+  height: 25vh; }
 
 .divs {
   display: none; }
@@ -72,3 +72,16 @@ input[type=text], select, textarea {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block; }
+
+.footer {
+  margin: 0; }
+
+.name {
+  float: left;
+  width: 75%;
+  overflow: hidden; }
+
+.profile {
+  float: left;
+  width: 25%;
+  overflow: hidden; }

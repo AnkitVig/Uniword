@@ -79,7 +79,7 @@ namespace Uniword\Module;
                     echo '<a href="downloaded.docx" >Download</a><br/>';
                     exit;
                 } else {
-                    $message = '<div class="alertMsg">Only .xls or .xlsx file allowed</div>';
+                    $message = '<div class="alertMsg">Invalid file: allowed ectensions : (doc, docx, xls, xlsx)</div>';
                     echo $message;
                     exit;
                 }
