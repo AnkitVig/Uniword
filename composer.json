@@ -3,6 +3,7 @@
     "description": "Module to add and update word and spreadsheets.",
     "type": "library",
     "require": {
+        "php": "^7.2",
         "phpoffice/phpword": "^0.17.0",
         "phpoffice/phpspreadsheet": "^1.14",
         "sabre/xml": "^2.2",
