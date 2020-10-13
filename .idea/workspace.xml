@@ -27,8 +27,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dc03381-b041-4f8c-b97a-fe4a1b01f09e" name="Default Changelist" comment="Update">
+      <change beforePath="$PROJECT_DIR$/.idea/Uniword.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Uniword.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +58,6 @@
       <path value="/Applications/MAMP/bin/php/php7.4.2/lib/php" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
-      <path value="$PROJECT_DIR$/vendor/sabre/xml" />
-      <path value="$PROJECT_DIR$/vendor/sabre/uri" />
       <path value="$PROJECT_DIR$/vendor/pclzip/pclzip" />
       <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
@@ -70,9 +71,6 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
-      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iTvgBr4TTYSWDFX7CQ18pLANsA" />
@@ -126,7 +124,7 @@
       <updated>1601944504597</updated>
       <workItem from="1601944505658" duration="27308000" />
       <workItem from="1602106605873" duration="95982000" />
-      <workItem from="1602521770894" duration="22236000" />
+      <workItem from="1602521770894" duration="23156000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1602598959864</created>
@@ -224,10 +222,10 @@
     </state>
     <state x="539" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1602254907448" />
     <state x="719" y="526" key="NewPhpFileDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1602163758892" />
-    <state x="221" y="54" key="SettingsEditor" timestamp="1602104754816">
+    <state x="221" y="54" key="SettingsEditor" timestamp="1602630875140">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="54" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602104754816" />
+    <state x="221" y="54" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602630875140" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.820@0.23.1440.820" timestamp="1601944510144" />
     <state x="597" y="418" key="Vcs.Push.Dialog.v2" timestamp="1602599014297">
       <screen x="0" y="23" width="1920" height="1120" />
