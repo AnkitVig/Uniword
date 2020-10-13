@@ -1,5 +1,6 @@
 {
     "name": "ankitvig/uniword",
+    "version": "1.0.0",
     "description": "Module to add and update word and spreadsheets.",
     "type": "library",
     "require": {
@@ -16,8 +17,8 @@
     	}
 
     },
+
     "license": "MIT",
-    "minimum-stability": "stable",
-    "version": "0.0.0"
+    "minimum-stability": "stable"
 }
 
