@@ -9,12 +9,14 @@
         "sabre/xml": "^2.2",
       "ext-pdo": "*",
         "symfony/http-foundation": "^5.1"
-    },    "autoload" : {
+    },
+    "autoload" : {
     	"psr-4": {
-    		"Uniword\\" : "src/"
+    		"ankitvig\\Uniword\\" : "src/"
     	}
 
     },
     "license": "MIT",
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
+
