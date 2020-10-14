@@ -44,7 +44,16 @@ namespace Uniword\Module;
                         'fileName' =>  $fileName,
                        'filePath' => 'Files/'.$fileName
                     );
-                    if(!in_array($extra, $arrayData)) $arrayData[]=$extra;
+                    if (!is_array($arrayData))
+                    {
+                        $arrayData[] = $extra;
+                    }
+                    else{
+                        if(!in_array($extra, $arrayData)) {
+                            $arrayData[] = $extra;
+                        }
+                    }
+
 
                     $json= json_encode($arrayData);
 
@@ -71,7 +80,16 @@ namespace Uniword\Module;
                         'fileName' =>  $fileName,
                         'filePath' => 'Files/'.$fileName
                     );
-                    if(!in_array($extra, $arrayData)) $arrayData[]=$extra;
+                    if (!is_array($arrayData))
+                    {
+                        $arrayData[] = $extra;
+                    }
+                    else{
+                        if(!in_array($extra, $arrayData)) {
+                            $arrayData[] = $extra;
+                        }
+                    }
+
 
                     $json= json_encode($arrayData);
 

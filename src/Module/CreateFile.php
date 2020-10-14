@@ -42,7 +42,16 @@ class CreateFile
                 'fileName' =>  $file,
                 'filePath' => 'Files/'.$file
             );
-            if(!in_array($extra, $arrayData)) $arrayData[]=$extra;
+            if (!is_array($arrayData))
+            {
+                $arrayData[] = $extra;
+            }
+            else{
+                if(!in_array($extra, $arrayData)) {
+                    $arrayData[] = $extra;
+                }
+            }
+
 
             $json= json_encode($arrayData);
 
@@ -69,7 +78,16 @@ class CreateFile
                 'fileName' =>  $file,
                 'filePath' => 'Files/'.$file
             );
-            if(!in_array($extra, $arrayData)) $arrayData[]=$extra;
+            if (!is_array($arrayData))
+            {
+                $arrayData[] = $extra;
+            }
+            else{
+                if(!in_array($extra, $arrayData)) {
+                    $arrayData[] = $extra;
+                }
+            }
+
 
             $json= json_encode($arrayData);
 

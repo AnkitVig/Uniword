@@ -21,6 +21,8 @@ class DisplayFileList
             <th>Download</th>
 
         </tr>";
+        if(is_array($arrayData))
+        {
         foreach($arrayData as $key=>$val)
         {
             echo " <tr>
@@ -30,7 +32,7 @@ class DisplayFileList
             <td><a href='".$val['filePath']."' >Download</a><br/></td>
 
         </tr>";
-        }
+        }}
         echo "</table></div>";
     }
 }
