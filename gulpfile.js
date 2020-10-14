@@ -10,7 +10,7 @@ gulp.task('css', function () {
             "maxLineLen": 80,
             "uglyComments": true
         }))
-        .pipe(gulp.dest('./dist/'));
+        .pipe(gulp.dest('./web/dist/'));
     return new Promise(function(resolve, reject) {
         console.log("css done");
         resolve();
