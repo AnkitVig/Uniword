@@ -1,8 +1,17 @@
 # Uniword
 This is simple project to Upload and Download word and Excel documents using PhpWord and Php Spread Sheets. 
 
-Functionalities : 
- * **Inset data:**  Will allow user to submit the data in the form and data will be stored in the data base to be downloaded later.
- * **Upload files:** The Upload files Gives the user to upload, display and download the Word and Excel file using phpword and phpspreadsheet packages
- * **Download Details:** The user can download the data what ever has been inserted into the database table.
+**Functionalities** 
+ * **Upload files:** The Upload files allows the user to upload, display and download the Word and Excel file using phpword and phpspreadsheet packages
+ * **Create files:** The Upload files aloows the user to create a new Word and Excel file using phpword and phpspreadsheet packages
+ * **List of files:** It will contain list of all the files uploaded and created by the user and also gives option to download any of the files.
+ 
+**How to Run the Project** 
+
+* Use the following commands
+
+```composer create-project ankitvig/uniword```
+
+```cd uniword/web && php -S localhost:8000```
+
 

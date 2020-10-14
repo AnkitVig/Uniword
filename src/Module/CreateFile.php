@@ -1,7 +1,7 @@
 <?php
 
 /*
- * File to load excel file in browser using Excel Spread Sheet.
+ * File to create a new excel or word file using Phpword and PhpSpreadSheet
  */
 namespace Uniword\Module;
 use PhpOffice\PhpSpreadsheet\IOFactory;

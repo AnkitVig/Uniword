@@ -1,7 +1,7 @@
 <?php
 
 /*
- * File to load excel file in browser using Excel Spread Sheet.
+ * Class to upload and display word and excel file in the browser.
  */
 namespace Uniword\Module;
 
