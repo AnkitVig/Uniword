@@ -26,20 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dc03381-b041-4f8c-b97a-fe4a1b01f09e" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/Module/CreateFile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Module/DisplayFileList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/Addstudent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/DBConnect.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/DiplayData.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Module/DownloadDBStudents.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Module/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Module/Upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniword" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/router.php" afterDir="false" />
-    </list>
+    <list default="true" id="5dc03381-b041-4f8c-b97a-fe4a1b01f09e" name="Default Changelist" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +118,7 @@
       <updated>1601944504597</updated>
       <workItem from="1601944505658" duration="27308000" />
       <workItem from="1602106605873" duration="95982000" />
-      <workItem from="1602521770894" duration="40723000" />
+      <workItem from="1602521770894" duration="40947000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1602598959864</created>
