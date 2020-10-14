@@ -10,51 +10,16 @@ $(document).ready(function(){
                 contentType:false,
                 cache:false,
                 processData:false,
-                success:function(data)
+                success:function(response)
                 {
-                    $('#excel_area').html(data);
+
+                    $('#excel_area').html(response);
                 }
             })
 
     });
+    $('#create_file').on('submit', function(event){
 
-    $('#download').on('click', function(event){
-
-        var download = $(this).attr('name');
-
-        $.ajax({
-            url:"router.php?a_download=a_download",
-            type:"GET",
-            contentType:false,
-            cache:false,
-            processData:false,
-            success:function(data)
-            {
-
-            }
-        })
-
-    });
-    $('#displayDetails').on('click', function(event){
-
-        var download = $(this).attr('name');
-
-        $.ajax({
-            url:"router.php?displayDetails=displayDetails",
-            type:"GET",
-            contentType:false,
-            cache:false,
-            processData:false,
-            success:function(data)
-            {console.log(data);
-                $('#display').html(data);
-            }
-        })
-
-    });
-
-
-    $('#add_student_form').on('submit', function(event){
         event.preventDefault();
         $.ajax({
             url:"router.php",
@@ -63,12 +28,32 @@ $(document).ready(function(){
             contentType:false,
             cache:false,
             processData:false,
-            success:function(data)
+            success:function(response)
             {
+                document.getElementById("file_name").value=""
+                document.getElementById("content").value=""
+                $('#download_area').html(response);
             }
         })
 
     });
+
+    $('#fileList').on('click', function(event){
+
+        $.ajax({
+            url:"router.php?fileList=fileList",
+            type:"GET",
+            contentType:false,
+            cache:false,
+            processData:false,
+            success:function(response)
+            {
+                $('#displayList').html(response);
+            }
+        })
+
+    });
+
 
     $('.buttons').click(function(event) {
         var target = event.target.attributes[2].value;

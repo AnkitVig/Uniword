@@ -14,72 +14,62 @@
 
   <div class = "middle">
   	  	<div class="MP">
-            <div class='div1 divs'>
-                <h1>Insert Student</h1>
-                <div>
-                    <form  class = "aligned_form" method="post" id="add_student_form">
-                        <label for = 'a' >First Name : </label>
-                        <input type="text" name="first_name"><br>
-                        <label for = 'b' >Email : </label>
-                        <input type="text" name="email"><br>
-                        <label for = 'c' l>Street : </label>
-                        <input type="text" name="street"><br>
-                        <label>City : </label>
-                        <input type="text" name="city"><br>
-                        <label>State : </label>
-                        <input type="text" name="state"><br>
-                        <label>Zip Code : </label>
-                        <input type="text" name="zip"><br>
-                        <label>Phone : </label>
-                        <input type="text" name="phone"><br>
-                        <label>Birth Date : </label>
-                        <input type="text" name="birthdate"><br>
-                        <label>Sex : </label>
-                        <input type="text" name="sex"><br>
-                        <label>Lunch Cost : </label>
-                        <input type="text" name="lunch"><br>
-                        <input method = "post" name="Add" type="submit" value="Add Student"  class="btn-primary" ><br>
-                    </form>
-                    <br />
-                </div>
-                </div>
-            <div  class='div2 divs'><h1 align="Left">Upload files</h1>
+
+            <div  class='div1 divs'><h1 align="Left">Upload files</h1>
                 <div>
                     <div class="table-responsive">
                         <span id="message"></span>
                         <form method="POST" id="load_excel_form" enctype="multipart/form-data">
-                            <table class="table">
-                                <tr>
-                                    <td width="25%" align="right">Select File</td>
-                                    <td width="50%"><input type="file" id ="filename" name="filename" /></td>
-                                    <td  ><input type="submit" name="load" id="btn"   class="btn-primary" /></td>
 
-                                </tr>
-                            </table>
+                                    <label>Select File</label>
+                                    <input type="file" id ="filename" name="filename" />
+                                  <input type="submit" name="load" id="btn"   class="btn-primary" />
+
+
                         </form>
                     </div>
-
-                    <div id="excel_area"></div>
+                    <br>
+                    <div  id="excel_area"></div>
 
                 </div>
             </div>
-            <div class='div3 divs'>
-                <h1>Download Student details</h1>
-                <div id = "display"></div>
-                <a method = "GET" id ="download" href="/Uniword/web/router.php?a_download">Download</a>
 
+            <div class='div2 divs'>
+                <h1>Create Files </h1>
+                <div>
+                    <form  class = "aligned_form" method="post" id="create_file">
+                        <label >File Name : </label>
+                        <input type="text" name="file_name" id="file_name"><br>
+                        <label >File Type : </label>
+                        <select id="file_type" name="file_type" >
+                            <option value=".docx">.docx</option>
+                            <option value=".xlsx">.xlsx</option>
+
+                        </select>
+                        <label l>Content : </label>
+                        <textarea rows="4" cols="50" type="text" name="content" id="content"></textarea><br>
+
+                        <input method = "post" name="Create" type="submit" value="Create File"  class="btn-primary" ><br>
+                    </form>
+                    <div id ="download_area"></div>
+                    <br />
+                </div>
             </div>
-
+            <div class='div3 divs'>
+                <h1>List of Files </h1>
+                <div id="displayList"></div>
+            </div>
         </div>
   	  	<div class="LP">
       <div class='leftNav'>
-          <a  href='#' class='b1 buttons' data-target='.div1'  >Insert Data</a>
-         </br> </br>
-          <a  href='#' class='b2 buttons' data-target='.div2'>Upload Files</a>
-          </br> </br>
-          <a href='#'   class='b3 buttons' data-target='.div3' method = "GET" id ="displayDetails">Download Students Details</a>
+
+          <a  href='#' class='b1 buttons' data-target='.div1'>Upload Files</a>
           </br> </br>
 
+          <a  href='#' class='b2 buttons' data-target='.div2'>Create Files</a>
+          </br> </br>
+          <a  href='#' class='b3 buttons' data-target='.div3' method = "GET" id ="fileList">List of Files</a>
+          </br> </br>
           </div>
         </div>
       <div class = "RP"></div>
@@ -100,6 +90,6 @@
           </div>
 
   </div>
-
+</div>
 </body>
 </html>
