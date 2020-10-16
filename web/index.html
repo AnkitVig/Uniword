@@ -5,6 +5,8 @@
     <title>Load Documents in Browser using PHPSpreadsheet and PHPWord</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script src="index.js"></script>
 </head>
 <body>
@@ -24,7 +26,6 @@
                                     <label>Select File</label>
                                     <input type="file" id ="filename" name="filename" />
                                   <input type="submit" name="load" id="btn"   class="btn-primary" />
-
 
                         </form>
                     </div>
@@ -57,25 +58,37 @@
             </div>
             <div class='div3 divs'>
                 <h1>List of Files </h1>
-                <div id="displayList"></div>
+
+
+
+                        <select id ="fileSelectList"></select> <br>
+
+
+
+               <br><br> <div  id="displayFile">
+                </div>
+
             </div>
         </div>
   	  	<div class="LP">
       <div class='leftNav'>
 
-          <a  href='#' class='b1 buttons' data-target='.div1'>Upload Files</a>
+          <a  href='#' class='b1 buttons' data-target='.div1'><i class="fa fa-fw fa-upload"></i>  Upload Files</a>
+          </br> </br>
+          <a  href='#' class='b2 buttons' data-target='.div2'> <i class="fa fa-fw fa-plus"></i>  Create Files</a>
+          </br> </br>
+          <a  href='#' class='b3 buttons' data-target='.div3' method = "GET" id ="fileList">
+              <i class="fa fa-fw fa-bars"></i>  List of Files</a>
           </br> </br>
 
-          <a  href='#' class='b2 buttons' data-target='.div2'>Create Files</a>
-          </br> </br>
-          <a  href='#' class='b3 buttons' data-target='.div3' method = "GET" id ="fileList">List of Files</a>
-          </br> </br>
-          </div>
+      </div>
         </div>
       <div class = "RP"></div>
+        </div>
+
 
   	
-  </div>
+
   <div class = "footer">
     <div class = "name">
       <h5 style="color: black;">Stay in touch</h5>
@@ -88,7 +101,6 @@
                   <li><a style="color: black;" href="https://www.linkedin.com/in/ankitkumarvig/" target="_blank" style="color: #0e76a8">LinkedIn</a></li>
               </ul>
           </div>
-
   </div>
 </div>
 </body>

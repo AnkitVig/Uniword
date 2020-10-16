@@ -9,7 +9,6 @@
         "phpoffice/phpword": "^0.17.0",
         "phpoffice/phpspreadsheet": "^1.14",
         "ext-pdo": "*"
-
     },
     "autoload" : {
     	"psr-4": {
@@ -20,4 +19,3 @@
 
     "license": "MIT"
 }
-

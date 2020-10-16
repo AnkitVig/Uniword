@@ -19,11 +19,16 @@ require_once __DIR__ . '/../vendor/autoload.php';
         $createFile = new \Uniword\Module\CreateFile();
         $createFile->createFile($_POST['file_name'],$_POST['file_type'],$_POST['content']);
     }
+
     if (isset($_GET['fileList'])) {
         $display = new \Uniword\Module\DisplayFileList();
         $display->displayFileList();
         unset($_GET);
     }
-
+    if (isset($_GET['file'])) {
+        $displayFile = new \Uniword\Module\DisplayFileList();
+        $displayFile->viewFile($_GET['file']);
+        unset($_GET);
+    }
 
 ?>
